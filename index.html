@@ -1,7 +1,7 @@
 <!-- Guardian Eagle Security - Desktop Landing Page -->
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
+<html class="dark scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Guardian Eagle Security | Northwest Sydney Premier Protection</title>
@@ -137,14 +137,14 @@
 <div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
 <div class="text-headline-md font-headline-md font-black tracking-tighter text-primary">GUARDIAN EAGLE</div>
 <div class="hidden md:flex items-center space-x-gutter">
-<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Systems</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Precision Defense</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Suburbs</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Safety Audit</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="#systems">Systems</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#defense">Precision Defense</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#suburbs">Suburbs</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#audit">Safety Audit</a>
 </div>
 <div class="flex items-center space-x-6">
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">security</span>
-<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md text-label-md font-bold hover:opacity-90 transition-opacity">Get a Quote</button>
+<a href="#audit" class="inline-block bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-label-md text-label-md font-bold hover:opacity-90 transition-opacity">Get a Quote</a>
 </div>
 </div>
 </nav>
@@ -163,13 +163,13 @@
                     High-definition 4K CCTV and intelligent smart alarms engineered for the unique security needs of <span class="text-on-surface font-semibold">Rouse Hill, Schofields, and Box Hill</span>. Don't leave your legacy to chance.
                 </p>
 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-headline-md text-headline-md glow-emerald hover:scale-[1.02] transition-transform flex items-center justify-center gap-2">
+<a href="#audit" class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-headline-md text-headline-md glow-emerald hover:scale-[1.02] transition-transform flex items-center justify-center gap-2">
 <span class="material-symbols-outlined">verified_user</span>
                         Free Security Audit
-                    </button>
-<button class="border border-primary-container text-primary-container px-8 py-4 rounded-xl font-headline-md text-headline-md hover:bg-primary-container/10 transition-colors flex items-center justify-center gap-2">
+                    </a>
+<a href="#audit" class="border border-primary-container text-primary-container px-8 py-4 rounded-xl font-headline-md text-headline-md hover:bg-primary-container/10 transition-colors flex items-center justify-center gap-2">
                         Get an Instant Quote
-                    </button>
+                    </a>
 </div>
 </div>
 <div class="relative group">
@@ -192,7 +192,7 @@
 </div>
 </section>
 <!-- Trust Row -->
-<section class="bg-surface-container-lowest py-10 border-y border-surface-variant">
+<section id="systems" class="bg-surface-container-lowest py-10 border-y border-surface-variant scroll-mt-32">
 <div class="max-w-container-max mx-auto px-margin-desktop">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="flex items-center justify-center md:justify-start gap-4 border-r border-surface-variant last:border-r-0">
@@ -220,7 +220,7 @@
 </div>
 </section>
 <!-- Precision Defense (Features) -->
-<section class="py-24 bg-background overflow-hidden relative">
+<section id="defense" class="py-24 bg-background overflow-hidden relative scroll-mt-24">
 <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
 <div class="text-center mb-16 space-y-4">
 <h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tighter">Precision Defense Systems</h2>
@@ -319,7 +319,7 @@
 </div>
 </section>
 <!-- Local Coverage & Testimonials -->
-<section class="py-24 bg-background">
+<section id="suburbs" class="py-24 bg-background scroll-mt-24">
 <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
 <!-- Suburbs List / Map Graphic -->
 <div class="space-y-12">
@@ -376,11 +376,11 @@
 </div>
 </section>
 <!-- Lead Capture Section -->
-<section class="py-24 bg-surface-container-low border-t border-surface-variant">
+<section id="audit" class="py-24 bg-surface-container-low border-t border-surface-variant scroll-mt-24">
 <div class="max-w-[800px] mx-auto px-margin-desktop text-center">
 <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Request Your Free Safety Audit</h2>
 <p class="font-body-md text-body-md text-on-surface-variant mb-12">One of our Northwest security specialists will visit your property for a zero-obligation risk assessment.</p>
-<form class="space-y-6 text-left">
+<form id="quote-form" class="space-y-6 text-left">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
 <div class="space-y-2">
 <label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Full Name</label>
@@ -463,5 +463,28 @@
                 input.parentElement.querySelector('label').style.color = '';
             });
         });
+
+        // Handle quote form submission
+        const quoteForm = document.getElementById('quote-form');
+        if(quoteForm) {
+            quoteForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const btn = this.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+                
+                // Show success state
+                btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Request Received';
+                btn.classList.remove('bg-primary-container', 'text-on-primary-container', 'glow-amber');
+                btn.classList.add('bg-secondary', 'text-on-secondary', 'glow-emerald');
+                
+                // Reset form after 3 seconds
+                setTimeout(() => {
+                    this.reset();
+                    btn.innerHTML = originalText;
+                    btn.classList.add('bg-primary-container', 'text-on-primary-container', 'glow-amber');
+                    btn.classList.remove('bg-secondary', 'text-on-secondary', 'glow-emerald');
+                }, 3000);
+            });
+        }
     </script>
 </body></html>
