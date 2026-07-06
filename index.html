@@ -431,7 +431,11 @@
                 });
                 this.classList.remove('text-on-surface-variant', 'border-transparent');
                 this.classList.add('text-primary', 'border-primary');
-                this.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                const navContainer = this.closest('.overflow-x-auto');
+                if (navContainer) {
+                    const scrollPos = this.offsetLeft - (navContainer.offsetWidth / 2) + (this.offsetWidth / 2);
+                    navContainer.scrollTo({ left: scrollPos, behavior: 'smooth' });
+                }
             });
         });
 
@@ -453,7 +457,11 @@
                     if (link.getAttribute('href') === '#' + currentActive) {
                         link.classList.remove('text-on-surface-variant', 'border-transparent');
                         link.classList.add('text-primary', 'border-primary');
-                        link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                        const navContainer = link.closest('.overflow-x-auto');
+                        if (navContainer) {
+                            const scrollPos = link.offsetLeft - (navContainer.offsetWidth / 2) + (link.offsetWidth / 2);
+                            navContainer.scrollTo({ left: scrollPos, behavior: 'smooth' });
+                        }
                     }
                 });
             }
