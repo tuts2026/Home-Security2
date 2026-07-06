@@ -5,16 +5,105 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Guardian Eagle Security | Northwest Sydney Premier Protection</title>
-<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <meta name="description" content="Guardian Eagle Security provides premier 4K CCTV and intelligent smart alarms for Northwest Sydney suburbs including Grantham Farm, Box Hill, Oakville, and Vineyard. Request a free safety audit today." />
 <meta property="og:title" content="Guardian Eagle Security | Northwest Sydney Premier Protection" />
 <meta property="og:description" content="Guardian Eagle Security provides premier 4K CCTV and intelligent smart alarms for Northwest Sydney suburbs. Request a free safety audit today." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://rousehillsecurity.com.au/" />
-<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#855300",
+                    "inverse-on-surface": "#2a3043",
+                    "on-tertiary-fixed": "#07006c",
+                    "on-primary-container": "#613b00",
+                    "on-tertiary-fixed-variant": "#2f2ebe",
+                    "surface-container-high": "#23293c",
+                    "secondary": "#4edea3",
+                    "background": "#0c1324",
+                    "on-primary-fixed-variant": "#653e00",
+                    "surface-container-highest": "#2e3447",
+                    "secondary-container": "#00a572",
+                    "on-secondary-container": "#00311f",
+                    "on-primary-fixed": "#2a1700",
+                    "primary-fixed": "#ffddb8",
+                    "outline-variant": "#534434",
+                    "tertiary-fixed": "#e1e0ff",
+                    "tertiary": "#c7c8ff",
+                    "error": "#ffb4ab",
+                    "on-error": "#690005",
+                    "on-secondary": "#003824",
+                    "surface-container-low": "#151b2d",
+                    "tertiary-fixed-dim": "#c0c1ff",
+                    "on-surface-variant": "#d8c3ad",
+                    "on-surface": "#dce1fb",
+                    "error-container": "#93000a",
+                    "surface-variant": "#2e3447",
+                    "surface-tint": "#ffb95f",
+                    "on-primary": "#472a00",
+                    "tertiary-container": "#a7a9ff",
+                    "on-secondary-fixed-variant": "#005236",
+                    "primary": "#ffc174",
+                    "secondary-fixed-dim": "#4edea3",
+                    "primary-container": "#f59e0b",
+                    "surface-container": "#191f31",
+                    "secondary-fixed": "#6ffbbe",
+                    "on-tertiary": "#1000a9",
+                    "surface-dim": "#0c1324",
+                    "surface": "#0c1324",
+                    "inverse-surface": "#dce1fb",
+                    "on-error-container": "#ffdad6",
+                    "surface-bright": "#33394c",
+                    "primary-fixed-dim": "#ffb95f",
+                    "outline": "#a08e7a",
+                    "on-secondary-fixed": "#002113",
+                    "surface-container-lowest": "#070d1f",
+                    "on-background": "#dce1fb",
+                    "on-tertiary-container": "#2b29bb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "container-max": "1280px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "label-sm": ["JetBrains Mono"],
+                    "headline-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-md": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Inter"],
+                    "display-xl": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "800"}],
+                    "display-xl": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "900"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -166,11 +255,11 @@
 <ul class="space-y-3 pt-4">
 <li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
 <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-                                Fast Pre-Travel Installation
+                                3840 x 2160 Resolution
                             </li>
 <li class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
 <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-                                Crystal Clear Night Vision
+                                Color Night Imaging
                             </li>
 </ul>
 </div>
@@ -312,17 +401,17 @@
 <form id="quote-form" class="space-y-6 text-left">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
 <div class="space-y-2">
-<label for="fullName" class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Full Name</label>
-<input id="fullName" name="fullName" autocomplete="name" class="w-full bg-background border border-surface-variant rounded-lg p-4 text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="e.g. John Smith" type="text"/>
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Full Name</label>
+<input class="w-full bg-background border border-surface-variant rounded-lg p-4 text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="e.g. John Smith" type="text"/>
 </div>
 <div class="space-y-2">
-<label for="mobileNumber" class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Mobile Number</label>
-<input id="mobileNumber" name="mobileNumber" autocomplete="tel" class="w-full bg-background border border-surface-variant rounded-lg p-4 text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="0400 000 000" type="tel"/>
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Mobile Number</label>
+<input class="w-full bg-background border border-surface-variant rounded-lg p-4 text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none" placeholder="0400 000 000" type="tel"/>
 </div>
 </div>
 <div class="space-y-2">
-<label for="suburb" class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Suburb</label>
-<select id="suburb" name="suburb" class="w-full bg-background border border-surface-variant rounded-lg p-4 text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none appearance-none">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Suburb</label>
+<select class="w-full bg-background border border-surface-variant rounded-lg p-4 text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all outline-none appearance-none">
 <option>Grantham Farm (Riverstone)</option>
 <option>Box Hill</option>
 <option>Oakville</option>
@@ -378,8 +467,8 @@
 <div class="max-w-container-max mx-auto px-margin-desktop mt-12 pt-8 border-t border-surface-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
 <p class="font-label-sm text-label-sm text-on-surface-variant opacity-80">© 2024 Guardian Eagle Security. Master Lic: 000123456. Serving Northwest Sydney.</p>
 <div class="flex gap-6">
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="privacy.html">Privacy Policy</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="terms.html">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a>
 </div>
 </div>
 </footer>
@@ -431,11 +520,6 @@
                 });
                 this.classList.remove('text-on-surface-variant', 'border-transparent');
                 this.classList.add('text-primary', 'border-primary');
-                const navContainer = this.closest('.overflow-x-auto');
-                if (navContainer) {
-                    const scrollPos = this.offsetLeft - (navContainer.offsetWidth / 2) + (this.offsetWidth / 2);
-                    navContainer.scrollTo({ left: scrollPos, behavior: 'smooth' });
-                }
             });
         });
 
@@ -457,11 +541,6 @@
                     if (link.getAttribute('href') === '#' + currentActive) {
                         link.classList.remove('text-on-surface-variant', 'border-transparent');
                         link.classList.add('text-primary', 'border-primary');
-                        const navContainer = link.closest('.overflow-x-auto');
-                        if (navContainer) {
-                            const scrollPos = link.offsetLeft - (navContainer.offsetWidth / 2) + (link.offsetWidth / 2);
-                            navContainer.scrollTo({ left: scrollPos, behavior: 'smooth' });
-                        }
                     }
                 });
             }
